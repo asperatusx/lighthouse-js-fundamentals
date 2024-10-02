@@ -1,13 +1,12 @@
-
-for (let i = 100; i <= 200; i++) {
-  if (i % 3 === 0 && i % 4 === 0) {
-    console.log('LoopyLighthouse')
-  }
-  else if (i % 3 === 0) {
-    console.log('Loopy')
-  }
-  else if (i % 4 === 0) {
-    console.log('Lighthouse')
-  }
-  else console.log(i)
+const calculateRectangleArea = function (length, width) {
+  if (length < 0 || width < 0) return undefined
+  return length * width
+}
+const calculateTriangleArea = function (base, height) {
+  if (base < 0 || height < 0) return undefined
+  return base * height / 2
+}
+const calculateCircleArea = function (radius) {
+  if (radius < 0) return undefined
+  return Math.PI * Math.pow(radius, 2)
 }
